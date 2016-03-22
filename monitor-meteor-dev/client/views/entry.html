@@ -1,0 +1,12 @@
+<template name="entry">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail entry" style="height: 450px;overflow: hidden;">
+            <p style="text-align: center"><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/book-bookmark-icon.png" style="width:125px;height:125px;margin:15px" alt=""></p>
+            <div class="caption">
+                <h3><input type="text" class="form-control the-title" value="{{date}}"></h3>
+                <p style="text-align: justify;height: 155px;">{{name}}</p>
+                <p style="text-align: center"><a href="{{url}}" target="_blank" class="btn btn-default" role="button"><i class="glyphicon glyphicon-link"></i></a> <a href="{{pdf_url}}" target="_blank" class="btn btn-default" role="button"><i class="glyphicon glyphicon-download-alt"></i></a></p>
+            </div>
+        </div>
+    </div>
+</template>

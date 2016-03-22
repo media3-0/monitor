@@ -1,0 +1,16 @@
+<body>
+<div class="container">
+    <header class="page-header">
+            <h1><img src="/logo.png" alt="Monitor" style="height:45px;width:auto"> <small>real-time proto</small></h1>
+    </header>
+    <form style="text-align: center"><input type="search" id="search" class="form-control"><br>
+    <small style="color:gray">We found {{entries.count}} documents</small></form>
+    <hr>
+    <p style="text-align: center"><a href="javascript:;" onclick="$('.entry').animate({'height':'450px'});" class="btn btn-default" role="button">Show all</a> <a href="javascript:;" onclick="$('.entry').animate({'height':'230px'})" class="btn btn-default" role="button">Show thumbs</a></p>
+    <div class="row" id="all-entries">
+        {{#each entries}}
+            {{> entry}}
+        {{/each}}
+    </div>
+</div>
+</body>
